@@ -36,8 +36,8 @@ public class NameFragment extends Fragment {
     public static NameFragment newInstance(String name) {
         Bundle bundle = new Bundle();
         bundle.putString("NAME", name);
-         NameFragment nameFragment = new NameFragment();
-         nameFragment.setArguments(bundle);
+        NameFragment nameFragment = new NameFragment();
+        nameFragment.setArguments(bundle);
         return nameFragment;
     }
 
@@ -45,7 +45,7 @@ public class NameFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof OnFragmentClickListener)
-        listener = (OnFragmentClickListener) context;
+            listener = (OnFragmentClickListener) context;
         else
             throw new ClassCastException("ur activity does not implements OnFragmentClickListener");
 
@@ -99,7 +99,7 @@ public class NameFragment extends Fragment {
         return v;
     }
 
-    public interface OnFragmentClickListener{
+    public interface OnFragmentClickListener {
         void onClickFragment(Name name);
     }
 
