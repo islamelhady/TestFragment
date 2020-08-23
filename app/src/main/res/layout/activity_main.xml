@@ -7,16 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_rv"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
     <fragment
         android:id="@+id/fragment_tv"
         android:name="com.example.testfragment.NameFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/main_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#304FFE"
+        android:text="hello_blank_activity"
+        android:textColor="#fff"
+        android:textSize="30sp" />
 </LinearLayout>
