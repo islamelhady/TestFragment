@@ -3,20 +3,20 @@ package com.example.testfragment.TabFragment;
 import androidx.fragment.app.Fragment;
 
 public class MyTab {
-    String tabName;
+    Category category;
     Fragment fragment;
 
-    public MyTab(String tabName, Fragment fragment) {
-        this.tabName = tabName;
+    public MyTab(Category category, Fragment fragment) {
+        this.category = category;
         this.fragment = fragment;
     }
 
-    public String getTabName() {
-        return tabName;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setTabName(String tabName) {
-        this.tabName = tabName;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public Fragment getFragment() {

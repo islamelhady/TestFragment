@@ -21,12 +21,18 @@ public class TabActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.main_tabLayout);
         viewPager = findViewById(R.id.main_pager);
 
-        PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
-        adapter.addTab(new MyTab("Jan",CategoryFragment.newInstance(1,"Jan")));
-        adapter.addTab(new MyTab("Fab",CategoryFragment.newInstance(2,"Fab")));
-        adapter.addTab(new MyTab("Mar",CategoryFragment.newInstance(3,"Mar")));
-        adapter.addTab(new MyTab("Apr",CategoryFragment.newInstance(4,"Apr")));
+//      adapter.addTab(new MyTab("Jan",CategoryFragment.newInstance(1,"Jan")));
+//      adapter.addTab(new MyTab("Fab",CategoryFragment.newInstance(2,"Fab")));
+//      adapter.addTab(new MyTab("Mar",CategoryFragment.newInstance(3,"Mar")));
+//      adapter.addTab(new MyTab("Apr",CategoryFragment.newInstance(4,"Apr")));
 
+
+
+        PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
+        Category category1 = new Category(1,"Food");
+        adapter.addTab(new MyTab(category1,CategoryFragment.newInstance(1,"Food")));
+        Category category2 = new Category(2,"Eat");
+        adapter.addTab(new MyTab(category2,CategoryFragment.newInstance(1,"Eat")));
         viewPager.setAdapter(adapter);
 
 
